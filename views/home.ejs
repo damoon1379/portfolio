@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="page">
+            <div class="header">
+                <div>
+                    <a href="https://github.com/damoon1379" class="fa fa-github" style="border:none;font-size:48px;color:red"></a>
+                </div>
+                <div style="display:flex">
+        <a href="#aboutMe">About Me</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    </div>
+    <div>
+    <h1 class='greet'><div class="greet-text" id='greet-text'>Hello! I'm Alireza I'm a junior full-stack web developer </div> </h1>
+</div>
+    <div class="aboutMe" id='aboutMe'>
+        <div class='aboutMe-pic'>
+            <img style='border-radius:100%;border:2px solid cyan;width:80%;object-fit: cover;' src="./src/pic2.png">
+        </div>
+        <div class="aboutMe-text" style='text-align: left;width: 70%;'>
+            <div>
+            <h1>About me</h1>
+            <p class="greet-text" style='line-height: 40px;'>
+            I'm a self taught full-stack web developer 
+            who loves making responsive websites and solving problems.
+            I have experience in working with React, Node.js and PostgreSQL.
+            I aspire to keep growing and turn my client's ideas into high-performing and 
+            beautiful websites.
+        </p> 
+    </div>
+        </div>
+
+    </div>
+    <div class="projects">
+        <h1>My Projects</h1>
+        <hr style='background-color: black;'>
+        <div class="projects-content" id='project'>
+                
+            <div class="project" id="project">
+                <div>
+                <h2><b> Blog API</b></h2>
+                <img src="./src/blog.png" alt="">
+            </div>
+                <div>This is a full stack blog application using Node.js and PostgreSQL.
+                    The user can create new blogs with their name, title and markdown.
+                    They can edit or remove their blogs as well.
+                </div>          
+                <a href="https://github.com/damoon1379/Blog">Check it out!</a>
+            </div>
+        
+            <div class="project" id='project'>
+                <div>
+                <h2><b>Restsurant API</b></h2>
+                <img src="./src/restaurant-api-home.png" >
+            </div>
+                <div>
+                    This one is a full stack web application that fetches different recipes from spoonacular API
+                    and shows them to the user. It was a good project to practice my skills to fetch data from APIs.
+                </div>
+                <a href="https://github.com/damoon1379/restaurant-api">Check it out!</a>
+            </div>
+        
+            <div class="project" id="project">
+                <div>
+                <h2><b>Shopping Cart</b></h2>
+                <img src="./src/shopping-cart-home.png" alt="">
+            </div>
+
+                <div>
+                    A Shopping cart app for a cafe! The user can add different desserts to their 
+                    shopping cart or remove from it, meanwhile they can see all their items in the cart
+                    including their numbers and total price. In the end they can confirm their order and
+                    go back to the main page. 
+                </div>
+                <a href="https://github.com/damoon1379/shop-list-react">Check it out!</a>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+    <div class="contact-me" id='contact'>
+        <h1 style='color:#ff00ff'>Contact Me</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" style='display:flex;flex-direction: column;gap:10px '>
+            <input type="hidden" name="access_key" value="5b7c3cd4-2628-4add-903a-615f75601e38">
+        <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" ></textarea>
+            <div>
+                <button class="submit" type="submit">Submit</button>
+            </div>
+            
+            </form>
+    </div>
+    <div class="decor">
+        <img src="./src/vector3.png" style="width:100%;height:auto;object-fit:cover;">
+    </div>
+</div>
+</div>
+
+</body>
+</html>

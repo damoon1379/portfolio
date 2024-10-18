@@ -1,0 +1,147 @@
+body{
+    padding:0;
+    margin:0;
+    background-image:linear-gradient(to top,#ff00ff,#ff00ff);
+    font-size:x-large;
+    font-family: fantasy;
+}
+
+.header{
+    background-color: rgb(0, 0, 51);
+    display:flex;
+    justify-content: space-between;
+    border-bottom:solid 2px #ff00ff ;
+    position:sticky;
+    width:100%;
+    top:0;
+}
+
+.header a {
+    display:flex;
+    color: white;
+    /*border: solid cyan 2px ;*/
+    border-radius:10px;
+    text-decoration:none;
+    margin:5px;
+    padding:5px;
+    align-items: center;
+    
+}
+
+.header a:hover{
+    color:  #ff00ff;
+    background-color: cyan;
+    text-decoration: none;
+}
+.greet-text{
+    display: inline-block;
+}
+.projects-content{
+display:grid;
+grid-template-columns: 25% 25% 25%;
+justify-content: space-between;
+gap:20px;
+padding:20px;
+}
+.projects-content a{
+    text-decoration: none;
+    border: solid 2px #3d3d5c;
+    border-radius:10px;
+    color:#3d3d5c;
+    margin: 5px;
+    text-align: center;
+    
+}
+.projects-content a:hover{
+    box-shadow: 0 0 5px black,
+    0 0 5px black,0 0 5px black,
+    0 0 5px black,0 0 5px black;
+    border:black solid 2px ;
+    color:black;
+}
+.project img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+}
+.project{
+    overflow: hidden;
+    gap:20px;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer{
+    padding-top:20px;
+    color: cyan;
+    background-color: black;
+    border-top: solid 2px  #ff00ff;
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+}
+.contact-me{
+    width:40%;
+}
+.contact-me form input{
+    border-radius: 10px;
+}
+.contact-me form textarea{
+    border-radius: 10px;
+}
+.decor{
+    overflow:hidden;
+    width:50%;
+}
+.decor img{
+animation:rotate 36s infinite linear;
+}
+@keyframes rotate{
+    100%{transform:rotate(360deg);}
+}
+.submit{
+    color:cyan;
+    background-color: black;
+    border:2px solid cyan;
+    border-radius:10px;
+    font-size: large;
+}
+.submit:hover{
+    border:solid #ff00ff 5px;
+}
+.aboutMe{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    padding:10px;
+}
+.aboutMe-pic{
+    overflow: hidden;
+}
+.projects h2{
+    font-size:larger;
+}
+@media (max-width:600px){
+    .aboutMe{
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    }
+    .aboutMe-text{
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .header{
+        font-size: medium;
+    }
+    .projects-content{
+        display:block;
+    }
+    .decor{
+        position: absolute;
+        opacity: 0.3;
+    }
+}
